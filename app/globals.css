@@ -1,4 +1,15 @@
 /* app/globals.css */
+:root {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --muted: #71717a;
+  --muted-soft: #f4f4f5;
+  --border: #e4e4e7;
+  --accent: #0070f3;
+  --accent-dark: #005bd1;
+  --surface: rgba(255, 255, 255, 0.82);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +19,11 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(0, 112, 243, 0.12), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, #fafafa 50%, #f4f4f5 100%);
+  color: var(--foreground);
 }
 
 body {
@@ -21,8 +36,11 @@ main {
   flex: 1;
 }
 
-h1 {
-  color: #111827;
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
 }
 
 a {
