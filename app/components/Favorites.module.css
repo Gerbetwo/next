@@ -1,0 +1,40 @@
+.card {
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e7eb;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.item:hover {
+  background: #e0f2fe;
+  transform: translateX(4px);
+}
